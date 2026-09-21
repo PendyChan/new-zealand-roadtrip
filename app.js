@@ -13,13 +13,13 @@ const days = [
     ['18:30','湖畔晚餐與散步','營地料理；或 Redcliff Restaurant。日落後氣溫下降，備保暖層。','food nature','1.5–2 小時','https://www.google.com/maps/search/Redcliff+Restaurant+Te+Anau','餐廳']
   ],extras:{meal:'早餐：Bespoke Kitchen；午餐：超市熟食／Kingston；咖啡：Frankton；晚餐：營地料理或 Redcliff。',rain:'雨大時取消湖畔散步，改參觀 Te Anau Glowworm Caves；船班需預約。',note:'租車門市時間、機場接送與車款設備出發前確認。'}},
   {id:'day-3',tab:'2/1',date:'02.01 Sun',title:'Milford Sound 峽灣日',route:'Te Anau ↔ Milford',drive:'改搭巴士 · 一日約 8–10 小時',stay:'Te Anau 同一營地',cost:'NZ$270–350／人',items:[
-    ['06:30','簡單早餐與接駁報到','依業者指定時間提早 15 分鐘抵達；攜帶防水外套、飲水與暈船藥。','food booking','30–45 分','',''],
-    ['07:15','Te Anau → Milford Scenic Road','由專業司機行駛，沿途依天候停 Eglinton Valley、Mirror Lakes 等。','nature transport booking','約 3 小時含停靠','https://www.google.com/maps/dir/Te+Anau/Milford+Sound','路線'],
-    ['10:45','Milford Sound 遊船','近看峭壁、瀑布與海豹；甲板風大，手機與相機注意防水。','nature booking','約 2 小時','https://www.milford-sound.co.nz/','活動資訊'],
-    ['13:00','午餐與回程','多數行程提供餐盒或可加購；回程在 Te Anau 前休息。','food transport','3–4 小時','',''],
+    ['06:30','簡單早餐與接駁報到','依業者指定時間提早 15 分鐘抵達；RealNZ 常用集合點為 85 Lakefront Drive，其他業者須依確認信為準。攜帶防水外套、飲水與暈船藥。','food booking','30–45 分','https://www.realnz.com/en/experiences/day-cruises/milford-sound-day-trip-from-te-anau/','RealNZ 預訂'],
+    ['07:15','Te Anau → Milford Scenic Road（巴士）','由專業司機行駛，沿途依天候停 Eglinton Valley、Mirror Lakes 等；比較 RealNZ 與 Southern Discoveries 的車型、停靠與取消條款。','nature transport booking','約 3 小時含停靠','https://www.google.com/maps/dir/Te+Anau/Milford+Sound','路線'],
+    ['10:45','Milford Sound 遊船','近看峭壁、瀑布與海豹；甲板風大，手機與相機注意防水。確認船班、集合時間、餐盒與取消政策。','nature booking','約 2 小時','https://www.milford-sound.co.nz/','活動資訊'],
+    ['13:00','午餐與回程','多數套裝為自備午餐或可加購餐盒；回程在 Te Anau 前休息，預留道路延誤緩衝。','food transport','3–4 小時','',''],
     ['17:30','營地休息','洗澡、排污或補水；晚餐在營地簡單煮，避免再開車。','camp food','2 小時','',''],
-    ['20:00','Te Anau 湖畔散步','依體力與天候彈性保留；日落約晚間，實際時間出發前確認。','nature','45–60 分','https://www.google.com/maps/search/Lake+Te+Anau+waterfront','地圖']
-  ],extras:{meal:'早餐：車上簡餐；午餐：遊船餐盒；咖啡：Te Anau 出發前；晚餐：營地料理。',rain:'Milford 雨天通常仍值得去；若道路封閉或船班取消，改 Te Anau Glowworm Caves＋湖岸步道。',note:'巴士接駁、遊船、餐食與取消條款必須預約並出發前確認。'}},
+    ['18:00','Te Ana-au 湖岸與 Māori 地名故事','回營地後安排短程湖岸散步，了解 Te Ana-au（洞穴之地）與 Ngāi Tahu 地名；若體力不足直接休息。','nature','45–60 分','https://www.google.com/maps/search/Lake+Te+Anau+waterfront','地圖']
+  ],extras:{meal:'早餐：車上簡餐；午餐：自備或套裝餐盒；咖啡：Te Anau 出發前；晚餐：營地料理。',rain:'Milford 雨天通常仍值得去；若道路封閉或船班取消，改 Te Ana-au Glowworm Caves（另訂時段）＋湖岸步道。',note:'巴士集合點、遊船、餐食、取消條款與 2027 價格必須預約並出發前確認；可比較 RealNZ 與 Southern Discoveries。'}},
   {id:'day-4',tab:'2/2',date:'02.02 Mon',title:'山湖公路到 Wānaka',route:'Te Anau → Wānaka',drive:'227 km · 約 3.5 小時',stay:'Wānaka 有供電營位',cost:'NZ$95–150／人',items:[
     ['08:00','早餐｜Sandfly Cafe／營地','補滿油、水與咖啡；今天為全程最長的移動日。','food','60 分','https://www.google.com/maps/search/Sandfly+Cafe+Te+Anau','地圖'],
     ['09:15','Te Anau → Kingston','沿原路返回，Kingston 湖畔休息 20 分鐘。','transport nature','約 1 小時 45 分','https://www.google.com/maps/dir/Te+Anau/Kingston+New+Zealand','導航'],
@@ -60,14 +60,14 @@ const days = [
     ['11:15','Geraldine 早午餐','短暫補給後續行，不加入額外景點。','food','45–60 分','https://www.google.com/maps/search/cafe+Geraldine+New+Zealand','附近餐廳'],
     ['12:15','Geraldine → Christchurch Airport','依租車規定先補滿燃油／LPG，預留市區交通時間。','transport','約 1 小時 45 分','https://www.google.com/maps/dir/Geraldine+New+Zealand/Christchurch+Airport','導航'],
     ['14:15','Christchurch 還露營車','完成異地還車驗車、卸下五人行李；保留交車照片與單據。','booking transport','1–2 小時','https://www.google.com/maps/search/campervan+rental+Christchurch+Airport','還車點'],
-    ['17:00','飯店入住與市區晚餐','住機場交通便利區域；若精神足夠，前往 Riverside Market／Avon River 周邊。','food','2–3 小時','https://www.google.com/maps/search/Riverside+Market+Christchurch','晚餐地圖']
+    ['17:00','飯店入住與市區晚餐','優先選 Christchurch Airport、Mia 或 CBD 近機場交通的飯店；確認 5 人房型、停車、寄放行李與隔日機場接送，再前往 Riverside Market／Avon River 周邊。','food booking','2–3 小時','https://www.google.com/maps/search/Christchurch+Airport+hotel','住宿與晚餐']
   ],extras:{meal:'早餐：營地；咖啡／午餐：Geraldine；晚餐：Riverside Market 或飯店附近。',rain:'湖邊取消，直接前往 Christchurch；下午改 International Antarctic Centre 或 Canterbury Museum 臨時館。',note:'Christchurch 還車門市截止時間、清潔規範、接駁與飯店入住出發前確認。'}},
   {id:'day-9',tab:'2/7',date:'02.07 Sat',title:'飛往 Brisbane',route:'Christchurch → Brisbane',drive:'國際直飛',stay:'Brisbane 飯店',cost:'NZ$220–500／人＋機票',items:[
     ['依航班','提早 3 小時到 Christchurch Airport','國際航班、托運行李與澳洲入境資料提前完成。','transport booking','3 小時','https://www.christchurchairport.co.nz/','機場'],
-    ['依航班','Christchurch → Brisbane','搭乘已確認的直飛航班；再次檢查行李額度與出發航廈。','transport booking','約 3 小時 50 分','https://www.airnewzealand.co.nz/flights/en-nz/flights-from-christchurch-to-brisbane','航班資訊'],
+    ['依航班','Christchurch → Brisbane','建議安排 2/7 下午前抵達 Brisbane 的直飛航班；航班尚未預訂，請確認行李額度、出發航廈與取消／改票條款。','transport booking','約 3 小時 50 分','https://www.airnewzealand.co.nz/flights/en-nz/flights-from-christchurch-to-brisbane','航班資訊'],
     ['抵達後','入住 Brisbane 機場交通便利區域','只住一晚，不排遠程活動；使用 Airtrain 或計程車。','transport','1–2 小時','https://www.bne.com.au/passenger/to-and-from','機場交通'],
     ['晚上','South Bank 河岸晚餐','依抵達時間散步；若航班延誤，直接飯店休息。','food','1.5–2 小時','https://www.google.com/maps/search/restaurants+South+Bank+Brisbane','附近餐廳']
-  ],extras:{meal:'早餐：Christchurch；午餐：依航班；晚餐：South Bank／飯店附近。',rain:'Queensland Museum／Gallery of Modern Art；營業時間出發前確認。',note:'直飛航班已確認；出發前再次確認班次、行李額度與機場報到截止時間。'}},
+  ],extras:{meal:'早餐：Christchurch；午餐：依航班；晚餐：South Bank／飯店附近。',rain:'Queensland Museum／Gallery of Modern Art；營業時間出發前確認。',note:'2/7 Christchurch → Brisbane 航班尚未預訂；確認班次、行李額度、機場報到截止時間與 2/8 22:35 國際航班的轉機緩衝。'}},
   {id:'day-10',tab:'2/8',date:'02.08 Sun',title:'Brisbane 緩衝日與返程',route:'Brisbane 市區 → BNE',drive:'約 30–45 分',stay:'22:35 離境',cost:'A$90–180／人',items:[
     ['08:30','早餐｜Brisbane CBD／South Bank','退房後寄放行李；不安排離市區太遠的景點。','food','1 小時','',''],
     ['10:00','South Bank＋City Botanic Gardens','步行為主，依高溫調整節奏。','nature','2–3 小時','https://www.google.com/maps/search/South+Bank+Parklands+Brisbane','地圖'],
