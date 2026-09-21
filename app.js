@@ -15,7 +15,7 @@ const days = [
   {id:'day-3',tab:'2/1',date:'02.01 Sun',title:'Milford Sound 峽灣日',route:'Te Anau ↔ Milford',drive:'改搭巴士 · 一日約 8–10 小時',stay:'Te Anau 同一營地',cost:'NZ$270–350／人',items:[
     ['06:30','簡單早餐與接駁報到','依業者指定時間提早 15 分鐘抵達；RealNZ 常用集合點為 85 Lakefront Drive，其他業者須依確認信為準。攜帶防水外套、飲水與暈船藥。','food booking','30–45 分','https://www.realnz.com/en/experiences/day-cruises/milford-sound-day-trip-from-te-anau/','RealNZ 預訂'],
     ['07:15','Te Anau → Milford Scenic Road（巴士）','由專業司機行駛，沿途依天候停 Eglinton Valley、Mirror Lakes 等；比較 RealNZ 與 Southern Discoveries 的車型、停靠與取消條款。','nature transport booking','約 3 小時含停靠','https://www.google.com/maps/dir/Te+Anau/Milford+Sound','路線'],
-    ['10:45','Milford Sound 遊船','近看峭壁、瀑布與海豹；甲板風大，手機與相機注意防水。確認船班、集合時間、餐盒與取消政策。','nature booking','約 2 小時','https://www.milford-sound.co.nz/','活動資訊'],
+    ['10:45','Milford Sound 遊船','近看峭壁、瀑布與海豹；甲板風大，手機與相機注意防水。確認船班、集合時間、餐盒與取消政策。','nature booking','約 2 小時','https://www.milford-sound.co.nz/','活動資訊','assets/milford.jpg'],
     ['13:00','午餐與回程','多數套裝為自備午餐或可加購餐盒；回程在 Te Anau 前休息，預留道路延誤緩衝。','food transport','3–4 小時','',''],
     ['17:30','營地休息、洗澡與排污','回到 Te Anau 後先完成排污、補水與洗澡；晚餐在營地簡單煮，避免再開車。','camp food','30–45 分','',''],
     ['18:30','Te Ana-au 湖岸與 Māori 地名故事','安排短程湖岸散步，了解 Te Ana-au（洞穴之地）與 Ngāi Tahu 地名；若體力不足直接休息。','nature','45–60 分','https://www.google.com/maps/search/Lake+Te+Anau+waterfront','地圖']
@@ -32,7 +32,7 @@ const days = [
     ['07:30','早餐｜Scroggin Coffee & Eatery','早起避開人潮；外帶步道午餐與咖啡。','food','60 分','https://www.google.com/maps/search/Scroggin+Wanaka','地圖'],
     ['09:00','Diamond Lake＋Rocky Mountain','依體力走 Lake Circuit 或上觀景點；完整往返約 3 小時。','nature','2–3.5 小時','https://www.doc.govt.nz/parks-and-recreation/places-to-go/otago/places/wanaka-area/things-to-do/diamond-lake-conservation-area/','DOC'],
     ['13:00','湖畔午餐與休息','返回 Wānaka，選 Federal Diner 或湖邊野餐。','food','1.5 小時','https://www.google.com/maps/search/Federal+Diner+Wanaka','地圖'],
-    ['15:00','彈性午後','天氣好租 SUP／單車；想休息則逛鎮區與湖岸。','nature','2–3 小時','https://www.wanaka.co.nz/','旅遊資訊'],
+    ['15:00','彈性午後','天氣好租 SUP／單車；想休息則逛鎮區與湖岸。','nature','2–3 小時','https://www.wanaka.co.nz/','旅遊資訊','assets/wanaka.jpg'],
     ['18:30','晚餐｜Kika／營地','Kika 適合分享但需預約；省預算則營地料理。','food booking','1.5–2 小時','https://www.google.com/maps/search/Kika+Wanaka','地圖'],
     ['21:00','觀星與早休','離開強光區，但勿把車停在私人地或禁止過夜處。','nature','30–60 分','','']
   ],extras:{meal:'早餐：Scroggin；午餐：Federal Diner／野餐；咖啡：Ritual Espresso；晚餐：Kika。',rain:'Puzzling World＋Cinema Paradiso＋咖啡店巡禮；若短暫陣雨，改 Waterfall Creek 平坦湖岸步道。',note:'步道、租借、水上活動與餐廳皆依天候／營業時間出發前確認。'}},
@@ -40,7 +40,7 @@ const days = [
     ['08:00','早餐與離營','營地早餐；在 Wānaka 補油，確認 SH8 與 SH80 路況。','food camp','60 分','',''],
     ['09:00','Wānaka → Lindis Pass','沿 SH8A／SH8 前進；Lindis Pass 觀景區短停，不在彎道臨停。','transport nature','約 1 小時 45 分','https://www.google.com/maps/dir/Wanaka/Lindis+Pass','導航'],
     ['11:15','Twizel 午餐與大採購','Poppies Cafe 或鎮區用餐；買足兩晚食材，山區選擇有限。','food','1.5 小時','https://www.google.com/maps/search/cafe+Twizel','附近餐廳'],
-    ['13:15','Lake Pukaki 南岸觀景','在合法觀景停車區停留；欣賞冰河粉形成的藍色湖水。','nature','30–45 分','https://www.google.com/maps/search/Lake+Pukaki+Viewpoint','地圖'],
+    ['13:15','Lake Pukaki 南岸觀景','在合法觀景停車區停留；欣賞冰河粉形成的藍色湖水。','nature','30–45 分','https://www.google.com/maps/search/Lake+Pukaki+Viewpoint','地圖','assets/pukaki.jpg'],
     ['14:15','SH80 沿湖公路','一路向 Aoraki 前進；Peter’s Lookout 是主要停靠點，勿跨越道路拍照。','nature transport','1–1.5 小時含停靠','https://www.google.com/maps/search/Peters+Lookout+Lake+Pukaki','地圖'],
     ['16:00','入住 Glentanner','接電、固定戶外物品；晚間看山色與星空。','camp booking nature','餘下傍晚','https://www.google.com/maps/search/Glentanner+Park+Centre','營地']
   ],extras:{meal:'早餐：營地；午餐：Twizel；咖啡：Twizel；晚餐：Glentanner 營地料理。',rain:'低雲遮山時先在 Twizel 放慢節奏；Lake Pukaki 顏色仍可見。抵達後改 Sir Edmund Hillary Alpine Centre。',note:'Glentanner 餐飲與商店選擇有限；先在 Twizel 完成補給。'}},
@@ -85,7 +85,7 @@ function renderDays(){
   tabs.innerHTML=`<button class="day-tab active" role="tab" data-day="all"><strong>全部</strong><span>總行程</span></button>`+days.map((d,i)=>`<button class="day-tab" role="tab" data-day="${d.id}"><strong>D${i+1} · ${d.tab}</strong><span>${d.title}</span></button>`).join('');
   itinerary.innerHTML=days.map((d,i)=>`<article class="day-panel active searchable" id="${d.id}" data-search="${d.date} ${d.title} ${d.route} ${d.items.map(x=>x.slice(1,3).join(' ')).join(' ')}">
     <div class="day-hero"><aside class="day-summary"><span class="day-number">${String(i+1).padStart(2,'0')}</span><p class="eyebrow">${d.date}</p><h3>${d.title}</h3><dl><dt>路線</dt><dd>${d.route}</dd><dt>移動</dt><dd>${d.drive}</dd><dt>住宿</dt><dd>${d.stay}</dd><dt>預估</dt><dd>${d.cost}</dd></dl></aside>
-    <div class="timeline">${d.items.map(item=>`<div class="timeline-item searchable" data-category="${item[3]}" data-search="${item.slice(0,5).join(' ')}"><div class="timeline-time">${item[0]}</div><div class="timeline-content"><h4>${item[1]}</h4><p>${item[2]}</p><div class="tags">${item[3].split(' ').map(c=>`<span class="tag ${c}">${categoryLabel[c]||c}</span>`).join('')}<span class="tag">${item[4]}</span></div>${item[5]?`<div class="item-links"><a href="${item[5]}" target="_blank" rel="noopener">${item[6]} ↗</a></div>`:''}</div></div>`).join('')}</div></div>
+    <div class="timeline">${d.items.map((item,itemIndex)=>{const imageId=`${d.id}-image-${itemIndex}`;return `<div class="timeline-item searchable" data-category="${item[3]}" data-search="${item.slice(0,5).join(' ')}"><div class="timeline-time">${item[0]}</div><div class="timeline-content"><h4>${item[1]}</h4><p>${item[2]}</p><div class="tags">${item[3].split(' ').map(c=>`<span class="tag ${c}">${categoryLabel[c]||c}</span>`).join('')}<span class="tag">${item[4]}</span></div>${item[5]?`<div class="item-links"><a href="${item[5]}" target="_blank" rel="noopener">${item[6]} ↗</a>${item[7]?`<button class="image-toggle" type="button" aria-expanded="false" aria-controls="${imageId}">查看景點圖片</button>`:''}</div>${item[7]?`<figure class="item-image" id="${imageId}" hidden><img src="${item[7]}" alt="${item[1]} 景點圖片"><figcaption>${item[1]}</figcaption></figure>`:''}`:''}</div></div>`}).join('')}</div></div>
     <div class="day-extras"><div class="mini-card"><h4>🍴 餐飲節奏</h4><p>${d.extras.meal}</p></div><div class="mini-card rain searchable" data-category="rain" data-search="雨天 備案 ${d.extras.rain}"><h4>☂ 雨天備案</h4><p>${d.extras.rain}</p></div><div class="mini-card warning searchable" data-category="booking" data-search="預約 注意 ${d.extras.note}"><h4>⌁ 出發前確認</h4><p>${d.extras.note}</p></div></div>
   </article>`).join('');
 }
@@ -107,6 +107,7 @@ function applyFilters(){
 }
 
 renderDays();
+itinerary.addEventListener('click',e=>{const button=e.target.closest('.image-toggle');if(!button)return;const image=document.getElementById(button.getAttribute('aria-controls'));const open=button.getAttribute('aria-expanded')==='true';button.setAttribute('aria-expanded',String(!open));button.textContent=open?'查看景點圖片':'收合景點圖片';image.hidden=open;});
 tabs.addEventListener('click',e=>{const b=e.target.closest('[data-day]');if(!b)return;selectedDay=b.dataset.day;tabs.querySelectorAll('.day-tab').forEach(x=>x.classList.toggle('active',x===b));applyFilters();});
 document.querySelector('.filters').addEventListener('click',e=>{const b=e.target.closest('[data-filter]');if(!b)return;selectedFilter=b.dataset.filter;document.querySelectorAll('.filter').forEach(x=>x.classList.toggle('active',x===b));applyFilters();});
 search.addEventListener('input',()=>{if(search.value.trim()){selectedDay='all';tabs.querySelectorAll('.day-tab').forEach(x=>x.classList.toggle('active',x.dataset.day==='all'));}applyFilters();});
