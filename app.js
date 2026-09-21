@@ -17,8 +17,8 @@ const days = [
     ['07:15','Te Anau → Milford Scenic Road（巴士）','由專業司機行駛，沿途依天候停 Eglinton Valley、Mirror Lakes 等；比較 RealNZ 與 Southern Discoveries 的車型、停靠與取消條款。','nature transport booking','約 3 小時含停靠','https://www.google.com/maps/dir/Te+Anau/Milford+Sound','路線'],
     ['10:45','Milford Sound 遊船','近看峭壁、瀑布與海豹；甲板風大，手機與相機注意防水。確認船班、集合時間、餐盒與取消政策。','nature booking','約 2 小時','https://www.milford-sound.co.nz/','活動資訊'],
     ['13:00','午餐與回程','多數套裝為自備午餐或可加購餐盒；回程在 Te Anau 前休息，預留道路延誤緩衝。','food transport','3–4 小時','',''],
-    ['17:30','營地休息','洗澡、排污或補水；晚餐在營地簡單煮，避免再開車。','camp food','2 小時','',''],
-    ['18:00','Te Ana-au 湖岸與 Māori 地名故事','回營地後安排短程湖岸散步，了解 Te Ana-au（洞穴之地）與 Ngāi Tahu 地名；若體力不足直接休息。','nature','45–60 分','https://www.google.com/maps/search/Lake+Te+Anau+waterfront','地圖']
+    ['17:30','營地休息、洗澡與排污','回到 Te Anau 後先完成排污、補水與洗澡；晚餐在營地簡單煮，避免再開車。','camp food','30–45 分','',''],
+    ['18:30','Te Ana-au 湖岸與 Māori 地名故事','安排短程湖岸散步，了解 Te Ana-au（洞穴之地）與 Ngāi Tahu 地名；若體力不足直接休息。','nature','45–60 分','https://www.google.com/maps/search/Lake+Te+Anau+waterfront','地圖']
   ],extras:{meal:'早餐：車上簡餐；午餐：自備或套裝餐盒；咖啡：Te Anau 出發前；晚餐：營地料理。',rain:'Milford 雨天通常仍值得去；若道路封閉或船班取消，改 Te Ana-au Glowworm Caves（另訂時段）＋湖岸步道。',note:'巴士集合點、遊船、餐食、取消條款與 2027 價格必須預約並出發前確認；可比較 RealNZ 與 Southern Discoveries。'}},
   {id:'day-4',tab:'2/2',date:'02.02 Mon',title:'山湖公路到 Wānaka',route:'Te Anau → Wānaka',drive:'227 km · 約 3.5 小時',stay:'Wānaka 有供電營位',cost:'NZ$95–150／人',items:[
     ['08:00','早餐｜Sandfly Cafe／營地','補滿油、水與咖啡；今天為全程最長的移動日。','food','60 分','https://www.google.com/maps/search/Sandfly+Cafe+Te+Anau','地圖'],
