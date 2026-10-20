@@ -77,7 +77,7 @@ const days = [
   ],extras:{meal:'早餐：South Bank；午餐：市區；晚餐：機場。',rain:'GOMA、Queensland Museum、Queensland Art Gallery。',note:'寄放行李、博物館營業時間、Airtrain 班次與航空公司報到截止時間出發前確認。'}}
 ];
 
-const tabs=document.getElementById('dayTabs'), itinerary=document.getElementById('itinerary'), search=document.getElementById('searchInput'), noResults=document.getElementById('noResults');
+const tabs=document.getElementById('dayTabs'), itinerary=document.getElementById('itinerary'), search=document.getElementById('searchInput'), noResults=document.getElementById('noResults'), searchStatus=document.getElementById('searchStatus');
 let selectedDay='all', selectedFilter='all';
 const categoryLabel={nature:'自然',food:'餐飲',camp:'露營',booking:'需預約',rain:'雨備',transport:'交通',prep:'準備'};
 
@@ -104,6 +104,7 @@ function applyFilters(){
   });
   document.querySelectorAll('#campGrid .searchable').forEach(card=>{const t=(card.dataset.search||card.textContent).toLowerCase();const cats=card.dataset.category||'';const show=(!q||t.includes(q))&&(selectedFilter==='all'||cats.includes(selectedFilter));card.style.display=show?'flex':'none';});
   noResults.hidden=visibleCount>0;
+  if(searchStatus){const queryLabel=q?`「${search.value.trim()}」`:'目前篩選';searchStatus.textContent=`${queryLabel}｜顯示 ${visibleCount} 天行程${selectedFilter==='all'?'':`，類型：${categoryLabel[selectedFilter]||selectedFilter}`}`;}
 }
 
 renderDays();
@@ -117,3 +118,16 @@ document.querySelectorAll('nav a').forEach(a=>a.addEventListener('click',()=>doc
 document.getElementById('printBtn').addEventListener('click',()=>window.print());
 
 document.querySelectorAll('.prep-grid input').forEach((box,i)=>{const key=`nz-trip-check-${i}`;box.checked=localStorage.getItem(key)==='1';box.addEventListener('change',()=>localStorage.setItem(key,box.checked?'1':'0'));});
+
+const routeStops=document.querySelectorAll('.route-stop[data-stop]');
+const routeNotes=document.querySelectorAll('.route-notes li[data-stop]');
+const routeNodes=document.querySelectorAll('.route-node[data-stop]');
+function selectRouteStop(stop){
+  routeStops.forEach(el=>el.classList.toggle('is-selected',el.dataset.stop===stop));
+  routeNotes.forEach(el=>el.classList.toggle('is-selected',el.dataset.stop===stop));
+  routeNodes.forEach(el=>el.classList.toggle('is-selected',el.dataset.stop===stop));
+}
+routeStops.forEach(el=>{el.addEventListener('click',()=>selectRouteStop(el.dataset.stop));el.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();selectRouteStop(el.dataset.stop);}});});
+routeNotes.forEach(el=>el.addEventListener('click',()=>selectRouteStop(el.dataset.stop)));
+routeNodes.forEach(el=>el.addEventListener('click',e=>{e.preventDefault();selectRouteStop(el.dataset.stop);document.getElementById('route').scrollIntoView({behavior:'smooth',block:'start'});}));
+
