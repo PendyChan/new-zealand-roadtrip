@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>紐西蘭南島旅程｜出發前待辦清單</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;800&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="todo.css">
+</head>
+<body>
+  <header class="hero">
+    <div class="hero__glow"></div>
+    <div class="wrap hero__content">
+      <p class="eyebrow">NEW ZEALAND · SOUTH ISLAND · 2027</p>
+      <h1>出發前待辦清單</h1>
+      <p class="hero__lead">集中管理租車、住宿、活動與入境文件。勾選狀態儲存在本機。</p>
+      <div class="trip-meta">
+        <span>🗓 2027/01/30–02/08</span>
+        <span>👥 5 位成人</span>
+        <span>🚐 Maui River 6 Berth</span>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap main">
+    <section class="stats" aria-label="進度摘要">
+      <article class="stat-card stat-card--accent"><span class="stat-label">完成進度</span><strong id="progressText">0%</strong><div class="progress"><span id="progressBar"></span></div></article>
+      <article class="stat-card"><span class="stat-label">已完成</span><strong id="doneCount">0</strong><small>／ <span id="totalCount">0</span> 項</small></article>
+      <article class="stat-card"><span class="stat-label">高優先待辦</span><strong id="highCount">0</strong><small>項尚未完成</small></article>
+      <article class="stat-card stat-card--sun"><span class="stat-label">距離出發</span><strong id="daysToGo">—</strong><small>天</small></article>
+    </section>
+
+    <section class="notice">
+      <span class="notice__icon">✦</span>
+      <div><strong>優先處理</strong><p>Maui 餘款與還車時間、Te Anau 營地、Milford coach＋cruise。</p></div>
+    </section>
+
+    <section class="toolbar" aria-label="搜尋與篩選">
+      <label class="search"><span>⌕</span><input id="searchInput" type="search" placeholder="搜尋待辦、地點或備註…"></label>
+      <div class="filters" role="group" aria-label="篩選條件">
+        <button class="filter is-active" data-filter="all">全部</button>
+        <button class="filter" data-filter="high">高優先</button>
+        <button class="filter" data-filter="open">未完成</button>
+        <button class="filter" data-filter="done">已完成</button>
+      </div>
+      <label class="category-wrap">分類 <select id="categoryFilter"><option value="all">全部分類</option></select></label>
+    </section>
+
+    <section class="layout">
+      <div id="todoList" class="todo-list" aria-live="polite"></div>
+      <aside class="side-panel">
+        <div class="side-card">
+          <h2>已確認資訊</h2>
+          <ul class="confirmed">
+            <li><span>✓</span> 1/31 Queenstown 09:30 取車</li>
+            <li><span>✓</span> 2/6 Christchurch 16:00 還車</li>
+            <li><span>✓</span> River 6 Berth／自排／柴油</li>
+            <li><span>✓</span> 必去：Pukaki、Wanaka、Milford</li>
+          </ul>
+        </div>
+        <div class="side-card side-card--blue">
+          <h2>建議優先順序</h2>
+          <ol class="priority-list">
+            <li>先處理有日期限制的預訂</li>
+            <li>確認文件、保險與租車餘款</li>
+            <li>出發前 48 小時看天氣與路況</li>
+          </ol>
+        </div>
+        <div class="side-card side-card--paper">
+          <h2>官方連結</h2>
+          <a href="https://www.immigration.govt.nz/visas/nzeta" target="_blank" rel="noopener">NZeTA／IVL ↗</a>
+          <a href="https://www.travellerdeclaration.govt.nz/" target="_blank" rel="noopener">New Zealand Traveller Declaration ↗</a>
+          <a href="https://www.doc.govt.nz/parks-and-recreation/places-to-go/fiordland/places/milford-sound-piopiotahi/" target="_blank" rel="noopener">DOC Milford 路況與公告 ↗</a>
+          <a href="https://www.realnz.com/en/experiences/day-cruises/milford-sound-day-trip-from-te-anau/" target="_blank" rel="noopener">RealNZ Milford 一日遊 ↗</a>
+        </div>
+      </aside>
+    </section>
+
+    <p id="emptyState" class="empty" hidden>找不到符合條件的待辦。</p>
+    <footer class="footer">行程日期、營業時間、價格、路況與名額皆請標註項目中的「出發前確認」並於預訂前再次核對。</footer>
+  </main>
+  <script src="todo.js"></script>
+</body>
+</html>
+
