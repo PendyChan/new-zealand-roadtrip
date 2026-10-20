@@ -14,21 +14,33 @@
     <a class="brand" href="#overview" aria-label="回到行程總覽"><span>NZ</span> 南島旅行誌</a>
     <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="mainNav">選單</button>
     <nav id="mainNav" aria-label="主要導覽">
-      <a href="#overview">總覽</a><a href="#days">每日行程</a><a href="#route">地圖</a><a href="#camps">營地</a><a href="#budget">預算</a><a href="#prepare">行前準備</a>
+      <a href="#overview">總覽</a><a href="#days">每日行程</a><a href="#route">地圖</a><a href="#camps">營地</a><a href="#budget">預算</a><a href="#prepare">行前準備</a><a href="todo.html">待辦</a>
     </nav>
   </header>
 
   <main>
     <section class="hero" id="overview">
       <div class="hero-copy">
-        <p class="eyebrow">2027.01.30 — 02.08 · 5 位成人</p>
-        <h1>從峽灣開進冰河藍，<br><em>十日九夜南島旅行</em></h1>
-        <p class="hero-lead">1/30 抵達 Queenstown、2/6 Christchurch 還車、2/7 飛往 Brisbane，露營車串起 Milford Sound、Wānaka、Lake Pukaki、Aoraki 與 Tekapo；一路向北，不走回頭路。</p>
+        <p class="eyebrow">ROAD ATLAS · 2027.01.30 — 02.08 · 5 位成人</p>
+        <h1>這趟旅程<br><em>怎麼走</em></h1>
+        <p class="hero-lead">Queenstown 取車，經 Te Anau、Milford、Wānaka、Pukaki、Aoraki、Tekapo，於 Christchurch 還車。以路線、駕駛時間與預訂狀態為主。</p>
         <div class="hero-actions">
-          <a class="button primary" href="#days">查看每日行程</a>
-          <a class="button ghost" href="https://www.google.com/maps/dir/Queenstown,+New+Zealand/Te+Anau,+New+Zealand/Wanaka,+New+Zealand/Lake+Pukaki,+New+Zealand/Aoraki+Mount+Cook+National+Park,+New+Zealand/Lake+Tekapo,+New+Zealand/Christchurch,+New+Zealand" target="_blank" rel="noopener">露營車主路線 ↗</a>
-          <a class="button ghost" href="https://www.google.com/maps/dir/Te+Anau,+New+Zealand/Milford+Sound,+New+Zealand" target="_blank" rel="noopener">Milford 巴士路線 ↗</a>
+          <a class="button primary" href="#route">先看路線</a>
+          <a class="button ghost" href="#days">按日期閱讀</a>
+          <a class="button ghost" href="#prepare">查看尚未確認事項</a>
         </div>
+      </div>
+      <div class="route-strip" aria-label="行程路線索引">
+        <div class="route-strip-label"><span>主線</span><strong>北上路線</strong></div>
+        <div class="route-strip-line" aria-hidden="true"></div>
+        <a href="#route" class="route-node" data-stop="queenstown"><b>01</b><span>Queenstown</span></a>
+        <a href="#route" class="route-node" data-stop="te-anau"><b>02</b><span>Te Anau</span></a>
+        <a href="#route" class="route-node route-node--coach" data-stop="milford"><b>↗</b><span>Milford</span></a>
+        <a href="#route" class="route-node" data-stop="wanaka"><b>03</b><span>Wānaka</span></a>
+        <a href="#route" class="route-node" data-stop="pukaki"><b>04</b><span>Pukaki</span></a>
+        <a href="#route" class="route-node" data-stop="aoraki"><b>05</b><span>Aoraki</span></a>
+        <a href="#route" class="route-node" data-stop="tekapo"><b>06</b><span>Tekapo</span></a>
+        <a href="#route" class="route-node route-node--finish" data-stop="christchurch"><b>07</b><span>Christchurch</span></a>
       </div>
       <div class="trip-stats" aria-label="行程摘要">
         <div><strong>8</strong><span>紐西蘭住宿晚</span></div>
@@ -38,8 +50,19 @@
       </div>
     </section>
 
+    <section class="decision-board" aria-labelledby="decisionTitle">
+      <div class="decision-intro"><span class="section-kicker">目前狀態</span><h2 id="decisionTitle">待處理事項</h2><p>優先處理會影響路線、住宿與交通的項目。</p><a class="decision-link" href="todo.html">查看完整待辦 →</a></div>
+      <div class="decision-list">
+        <a class="decision-item decision-item--open" href="todo.html"><span class="decision-mark">01</span><span><strong>Milford coach＋cruise</strong><small>Te Anau 出發</small></span><b>待預訂</b></a>
+        <a class="decision-item decision-item--open" href="#camps"><span class="decision-mark">02</span><span><strong>Te Anau 露營地</strong><small>Tasman／Lakeview</small></span><b>待決定</b></a>
+        <a class="decision-item decision-item--open" href="todo.html"><span class="decision-mark">03</span><span><strong>Maui 還車時間</strong><small>原訂 16:00</small></span><b>待確認</b></a>
+        <a class="decision-item decision-item--open" href="todo.html"><span class="decision-mark">04</span><span><strong>Christchurch → Brisbane</strong><small>建議 2/7 抵達</small></span><b>待訂票</b></a>
+        <a class="decision-item decision-item--done" href="#route"><span class="decision-mark">05</span><span><strong>核心路線</strong><small>Wanaka／Pukaki／Milford</small></span><b>已確認</b></a>
+      </div>
+    </section>
+
     <section class="assumption-band" aria-labelledby="assumptionTitle">
-      <div><span class="section-kicker">PLAN NOTES</span><h2 id="assumptionTitle">行程設定與限制</h2></div>
+      <div><span class="section-kicker">TRIP RULES</span><h2 id="assumptionTitle">先記住這五件事</h2></div>
       <ul>
         <li>以 <strong>5 位成人</strong>估算，主要使用<strong>一台可合法乘坐及住宿 6 人的 6-berth 自排露營車</strong>。</li>
         <li>1/30 住 Queenstown 飯店；1/31 上午取車，2/6 下午於 Christchurch 還車。</li>
@@ -51,8 +74,8 @@
 
     <section class="planner" id="days">
       <div class="section-heading">
-        <div><span class="section-kicker">DAY BY DAY</span><h2>每日行程</h2></div>
-        <p>搜尋景點、餐廳或活動，亦可只顯示某一天與指定類型。</p>
+        <div><span class="section-kicker">日期索引</span><h2>每日行程</h2></div>
+        <p>依日期、類型或關鍵字篩選。</p>
       </div>
       <div class="planner-tools" role="search">
         <label class="searchbox"><span aria-hidden="true">⌕</span><input id="searchInput" type="search" placeholder="搜尋：Milford、咖啡、健行…" aria-label="搜尋行程"></label>
@@ -67,13 +90,14 @@
       </div>
       <div class="day-tabs" id="dayTabs" role="tablist" aria-label="選擇日期"></div>
       <div id="itinerary" class="itinerary" aria-live="polite"></div>
+      <p id="searchStatus" class="search-status" aria-live="polite"></p>
       <p id="noResults" class="empty" hidden>沒有符合條件的項目，請清除搜尋或切換篩選。</p>
     </section>
 
     <section class="route-section" id="route">
       <div class="section-heading light">
-        <div><span class="section-kicker">ROAD BOOK</span><h2>路線與交通</h2></div>
-        <p>露營車：Queenstown → Te Anau（停車）→ Wānaka → Lake Pukaki / Aoraki → Tekapo → Christchurch；Milford Sound 改搭 Te Anau 往返巴士＋遊船</p>
+        <div><span class="section-kicker">路線索引</span><h2>路線與交通</h2></div>
+        <p>露營車：Queenstown → Te Anau → Wānaka → Pukaki → Aoraki → Tekapo → Christchurch。Milford 由 Te Anau 搭巴士與遊船。</p>
       </div>
       <div class="map-shell">
         <div id="map" class="route-map" role="img" aria-label="Queenstown 經 Te Anau、Milford Sound、Wānaka、Lake Pukaki、Aoraki、Lake Tekapo，最後抵達 Christchurch 的路線示意圖">
@@ -88,26 +112,26 @@
             <path class="map-contour faint" d="M151 552c39-59 60-103 112-146 68-57 95-117 124-180 27-58 76-96 137-122"/>
             <path class="map-route-line camper-route" d="M230 532L131 554L294 417L365 332L430 243L516 184L636 110"/>
             <path class="map-route-line coach-route" d="M131 554L94 467L131 554"/>
-            <g class="route-stop"><circle cx="230" cy="532" r="10"/><text x="251" y="539">Queenstown</text><text class="stop-note" x="251" y="557">1/31 取車</text></g>
-            <g class="route-stop"><circle cx="131" cy="554" r="10"/><text x="151" y="585">Te Anau</text><text class="stop-note" x="151" y="603">2 晚</text></g>
-            <g class="route-stop highlight"><circle cx="94" cy="467" r="12"/><text x="30" y="439">Milford Sound</text><text class="stop-note" x="30" y="457">巴士＋遊船</text></g>
-            <g class="route-stop"><circle cx="294" cy="417" r="10"/><text x="315" y="424">Wānaka</text><text class="stop-note" x="315" y="442">2 晚</text></g>
-            <g class="route-stop"><circle cx="365" cy="332" r="10"/><text x="386" y="326">Lake Pukaki</text><text class="stop-note" x="386" y="344">沿湖景觀</text></g>
-            <g class="route-stop highlight"><circle cx="430" cy="243" r="12"/><text x="451" y="237">Aoraki</text><text class="stop-note" x="451" y="255">健行 1 日</text></g>
-            <g class="route-stop"><circle cx="516" cy="184" r="10"/><text x="537" y="191">Lake Tekapo</text><text class="stop-note" x="537" y="209">1 晚</text></g>
-            <g class="route-stop finish"><circle cx="636" cy="110" r="13"/><text x="470" y="91">Christchurch</text><text class="stop-note" x="511" y="109">2/6 還車</text></g>
+            <g class="route-stop" data-stop="queenstown" tabindex="0" role="button" aria-label="選擇 Queenstown"><circle cx="230" cy="532" r="10"/><text x="251" y="539">Queenstown</text><text class="stop-note" x="251" y="557">1/31 取車</text></g>
+            <g class="route-stop" data-stop="te-anau" tabindex="0" role="button" aria-label="選擇 Te Anau"><circle cx="131" cy="554" r="10"/><text x="151" y="585">Te Anau</text><text class="stop-note" x="151" y="603">2 晚</text></g>
+            <g class="route-stop highlight" data-stop="milford" tabindex="0" role="button" aria-label="選擇 Milford Sound"><circle cx="94" cy="467" r="12"/><text x="30" y="439">Milford Sound</text><text class="stop-note" x="30" y="457">巴士＋遊船</text></g>
+            <g class="route-stop" data-stop="wanaka" tabindex="0" role="button" aria-label="選擇 Wānaka"><circle cx="294" cy="417" r="10"/><text x="315" y="424">Wānaka</text><text class="stop-note" x="315" y="442">2 晚</text></g>
+            <g class="route-stop" data-stop="pukaki" tabindex="0" role="button" aria-label="選擇 Lake Pukaki"><circle cx="365" cy="332" r="10"/><text x="386" y="326">Lake Pukaki</text><text class="stop-note" x="386" y="344">沿湖景觀</text></g>
+            <g class="route-stop highlight" data-stop="aoraki" tabindex="0" role="button" aria-label="選擇 Aoraki"><circle cx="430" cy="243" r="12"/><text x="451" y="237">Aoraki</text><text class="stop-note" x="451" y="255">健行 1 日</text></g>
+            <g class="route-stop" data-stop="tekapo" tabindex="0" role="button" aria-label="選擇 Lake Tekapo"><circle cx="516" cy="184" r="10"/><text x="537" y="191">Lake Tekapo</text><text class="stop-note" x="537" y="209">1 晚</text></g>
+            <g class="route-stop finish" data-stop="christchurch" tabindex="0" role="button" aria-label="選擇 Christchurch"><circle cx="636" cy="110" r="13"/><text x="470" y="91">Christchurch</text><text class="stop-note" x="511" y="109">2/6 還車</text></g>
             <g class="map-legend" transform="translate(28 650)"><rect width="704" height="44" rx="16"/><circle cx="24" cy="22" r="7"/><text x="40" y="27">露營車主路線</text><path d="M190 22h46"/><text x="247" y="27">Milford 往返為接駁巴士</text><text class="offline-note" x="486" y="27">離線地圖 · 不載入外部圖磚</text></g>
           </svg>
         </div>
         <aside class="route-notes">
           <h3>駕駛節奏</h3>
           <ol>
-            <li><strong>Queenstown → Te Anau</strong><span>171 km · 約 2 小時 15 分</span></li>
-            <li><strong>Te Anau ↔ Milford</strong><span>240 km 景觀公路 · 露營車停營地，改搭接駁巴士</span></li>
-            <li><strong>Te Anau → Wānaka</strong><span>227 km · 約 3.5 小時</span></li>
-            <li><strong>Wānaka → Pukaki</strong><span>約 200 km · 2.5–3 小時含停靠</span></li>
-            <li><strong>Aoraki → Tekapo</strong><span>約 105 km · 1 小時 20 分</span></li>
-            <li><strong>Tekapo → Christchurch</strong><span>約 227 km · 約 3 小時</span></li>
+            <li data-stop="queenstown"><strong>Queenstown → Te Anau</strong><span>171 km · 約 2 小時 15 分</span></li>
+            <li data-stop="milford"><strong>Te Anau ↔ Milford</strong><span>240 km 景觀公路 · 露營車停營地，改搭接駁巴士</span></li>
+            <li data-stop="wanaka"><strong>Te Anau → Wānaka</strong><span>227 km · 約 3.5 小時</span></li>
+            <li data-stop="pukaki"><strong>Wānaka → Pukaki</strong><span>約 200 km · 2.5–3 小時含停靠</span></li>
+            <li data-stop="aoraki"><strong>Aoraki → Tekapo</strong><span>約 105 km · 1 小時 20 分</span></li>
+            <li data-stop="christchurch"><strong>Tekapo → Christchurch</strong><span>約 227 km · 約 3 小時</span></li>
           </ol>
           <div class="callout warning"><strong>露營車時間</strong><p>導航時間加 15–25%，每 90 分鐘換手或休息。紐西蘭靠左行駛，單線橋依號誌與優先標誌通行。</p></div>
           <a class="button map-button" href="https://www.nzta.govt.nz/traffic-and-travel-information/" target="_blank" rel="noopener">NZTA 即時路況 ↗</a>
@@ -128,7 +152,7 @@
     </section>
 
     <section class="camps-section" id="camps">
-      <div class="section-heading"><div><span class="section-kicker">SLEEP OUTSIDE</span><h2>每站露營地</h2></div><p>夏季營位有限；一台 6-berth 只需一個營位，但訂房時必須填寫 5 位成人並確認車長限制。</p></div>
+      <div class="section-heading"><div><span class="section-kicker">住宿索引</span><h2>露營地</h2></div><p>訂 1 台露營車、5 位成人；確認車長與供電規格。</p></div>
       <div class="card-grid" id="campGrid">
         <article class="info-card searchable" data-category="camp booking" data-search="Te Anau Lakeview Holiday Park Milford 露營">
           <span class="status">首選 · 有供電</span><h3>Te Anau Lakeview Holiday Park</h3><p>適合連住兩晚，參加 Milford 行程容易接駁；可補水、排污、洗澡與使用共用廚房。訂房填 5 位成人、1 台露營車。</p><div class="meta"><span>1/31–2/2 · 2 晚</span><span>Te Anau</span><span>提早預約</span></div><a href="https://www.google.com/maps/search/Te+Anau+Lakeview+Holiday+Park" target="_blank" rel="noopener">地圖與評價 ↗</a>
@@ -159,7 +183,7 @@
     </section>
 
     <section class="budget-section" id="budget">
-      <div class="section-heading"><div><span class="section-kicker">MONEY MAP</span><h2>預算估算</h2></div><p>以 5 人、一台 6-berth、Queenstown 取車／Christchurch 還車、旺季 6 晚估算；幣別 NZD。機票、保險與 NZeTA 另列。</p></div>
+      <div class="section-heading"><div><span class="section-kicker">費用</span><h2>預算估算</h2></div><p>5 人、1 台 6-berth；幣別 NZD。機票、保險與 NZeTA 另計。</p></div>
       <div class="budget-layout">
         <div class="budget-table-wrap">
           <table>
@@ -187,7 +211,7 @@
     </section>
 
     <section class="prepare-section" id="prepare">
-      <div class="section-heading light"><div><span class="section-kicker">BEFORE YOU GO</span><h2>行前準備</h2></div><p>按一下可勾選；狀態只儲存在這台裝置。</p></div>
+      <div class="section-heading light"><div><span class="section-kicker">行前</span><h2>準備清單</h2></div><p>勾選狀態儲存在本機。</p></div>
       <div class="prep-grid">
         <article><h3>證件與預約</h3><label><input type="checkbox"> 護照效期、NZeTA 與 IVL</label><label><input type="checkbox"> 台灣駕照＋英文譯本／國際駕照，並攜帶正本</label><label><input type="checkbox"> 兩位以上登記駕駛與駕照類別</label><label><input type="checkbox"> 露營車異地還車、押金與全險條款</label><label><input type="checkbox"> Milford 巴士＋遊船與全部營位</label><label><input type="checkbox"> 2/7 Christchurch–Brisbane 航班與行李</label><label><input type="checkbox"> 旅遊保險、道路救援與緊急聯絡</label></article>
         <article><h3>露營與健行</h3><label><input type="checkbox"> 防水外套與保暖中層</label><label><input type="checkbox"> 防滑健行鞋、羊毛襪</label><label><input type="checkbox"> 防曬、帽子、墨鏡</label><label><input type="checkbox"> 沙蠅防蚊液</label><label><input type="checkbox"> 小型頭燈、行動電源</label><label><input type="checkbox"> 軟殼行李袋，避免大型硬殼箱</label></article>
@@ -197,7 +221,7 @@
     </section>
 
     <section class="safety-section">
-      <div class="section-heading"><div><span class="section-kicker">GOOD TRAVELLER</span><h2>禮儀、安全與避雷</h2></div></div>
+      <div class="section-heading"><div><span class="section-kicker">注意事項</span><h2>禮儀與安全</h2></div></div>
       <div class="safety-grid">
         <article><span>01</span><h3>尊重 whenua（土地）</h3><p>步道不越界、不碰野生動物；鞋底入境前清潔。地名優先使用 Māori／雙語名稱，勿踩入私人牧場拍照。</p></article>
         <article><span>02</span><h3>不要把自包含當通行證</h3><p>有綠色 warrant 仍不代表到處能停。只在合法營位過夜，不在景點停車場架桌椅或排放廢水。</p></article>
@@ -222,3 +246,4 @@
   <script src="app.js"></script>
 </body>
 </html>
+
